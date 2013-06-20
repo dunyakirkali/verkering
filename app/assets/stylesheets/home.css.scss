@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "compass/css3/border-radius";
+//@import "compass/css3/border-radius";
+//@import "compass/css3/font-face";
 
 $white: white;
 $black: rgb(38, 38, 38);
@@ -19,32 +20,32 @@ $green: #468966;
 $brown: #FFB03B;
 $pink: #B64926;
 
+$button-blue: #247fcc;
+
+@mixin joy-font {
+  font-family:helvetica, sans-serif;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2pt;
+  word-spacing:5pt;
+  font-size:38px;
+  line-height:2;
+}
+
 html {
   padding: 3px;
   color: $white;
   font-weight:bold;
-  text-transform:uppercase;
-  letter-spacing:2pt;
-  word-spacing:5pt;
-  font-size:38px;
-  text-align:left;
-  font-family:helvetica, sans-serif;
-  line-height:2;
+  @include joy-font;
 }
+
 body {
   background-color: $black;
 }
 button {
-  font-family:helvetica, sans-serif;
-  font-weight:bold;
-  text-transform:uppercase;
-  letter-spacing:2pt;
-  word-spacing:5pt;
-  font-size:38px;
   border: 0px;
   margin-top: auto;
-  text-transform:uppercase;
-  text-align: center;
+  @include joy-font;
   width: auto;
   height: 80px;
   margin: 3px;
@@ -52,24 +53,19 @@ button {
 #header {
   padding-left: 10px;
   height: auto;
-  background-color: $black;
 }
 #buttons {
   padding: 3px;
   text-align:center;
-  background-color: $black;
   width:auto;
   height:auto;
 }
-#list {
-  background-color: $black;
-}
 .button {
   color: white;
-  background-color: #247fcc;
+  background-color: $button-blue;
 }
 .curved {
-  @include border-radius(6px);
+  //@include border-radius(6px);
   padding: 5px;
 }
 .item {
@@ -82,4 +78,35 @@ button {
   height: auto;
   margin: 3px;
   float: left;
+
+  &.dark-red {
+    background-color: $dark-red;
+  }
+  &.light-red {
+    background-color: $light-red;
+  }
+  &.medium-dark-red {
+    background-color: $medium-dark-red;
+  }
+  &.medium-ligth-red {
+    background-color: $medium-ligth-red;
+  }
+  &.medium-red {
+    background-color: $medium-red;
+  }
+  &.red {
+    background-color: $red;
+  }
+  &.yellow {
+    background-color: $yellow;
+  }
+  &.brown {
+    background-color: $brown;
+  }
+  &.green {
+    background-color: $green;
+  }
+  &.pink{
+    background-color: $pink;
+  }
 }

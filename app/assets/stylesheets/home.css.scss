@@ -33,22 +33,11 @@ $button-blue: #247fcc;
 }
 
 html {
-  padding: 3px;
-  color: $white;
-  font-weight:bold;
   @include joy-font;
 }
-
 body {
+  color: $white;
   background-color: $black;
-}
-button {
-  border: 0px;
-  margin-top: auto;
-  @include joy-font;
-  width: auto;
-  height: 80px;
-  margin: 3px;
 }
 #header {
   padding-left: 10px;
@@ -61,8 +50,14 @@ button {
   height:auto;
 }
 .button {
-  color: white;
+  color: $white;
   background-color: $button-blue;
+  border: 0px;
+  margin-top: auto;
+  @include joy-font;
+  width: auto;
+  height: 80px;
+  margin: 3px;
 }
 .curved {
   //@include border-radius(6px);

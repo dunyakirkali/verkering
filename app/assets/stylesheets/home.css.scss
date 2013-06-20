@@ -2,9 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "compass/css3/border-radius";
+
+$white: white;
+$black: rgb(38, 38, 38);
+
+$dark-red: #F2508B;
+$medium-dark-red: #F288A4;
+$medium-red: #FEDCBA;
+$medium-ligth-red: #D7DDC3;
+$light-red: #93BDB9;
+
+$red: #8E2800;
+$yellow: #FFF0A5;
+$green: #468966;
+$brown: #FFB03B;
+$pink: #B64926;
+
 html {
   padding: 3px;
-  color: white;
+  color: $white;
   font-weight:bold;
   text-transform:uppercase;
   letter-spacing:2pt;
@@ -13,6 +30,9 @@ html {
   text-align:left;
   font-family:helvetica, sans-serif;
   line-height:2;
+}
+body {
+  background-color: $black;
 }
 button {
   font-family:helvetica, sans-serif;
@@ -32,26 +52,24 @@ button {
 #header {
   padding-left: 10px;
   height: auto;
-  background-color: rgb(38, 38, 38);
+  background-color: $black;
 }
 #buttons {
   padding: 3px;
   text-align:center;
-  background-color: rgb(38, 38, 38);
+  background-color: $black;
   width:auto;
   height:auto;
 }
 #list {
-  background-color: rgb(38, 38, 38);
+  background-color: $black;
 }
 .button {
   color: white;
   background-color: #247fcc;
 }
 .curved {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  @include border-radius(6px);
   padding: 5px;
 }
 .item {
@@ -64,34 +82,4 @@ button {
   height: auto;
   margin: 3px;
   float: left;
-}
-.dark-red {
-  background-color: #F2508B;
-}
-.medium-dark-red {
-  background-color: #F288A4;
-}
-.medium-red {
-  background-color: #FEDCBA;
-}
-.medium-ligth-red {
-  background-color: #D7DDC3;
-}
-.light-red {
-  background-color: #93BDB9;
-}
-.red {
-  background-color: #8E2800;
-}
-.yellow {
-  background-color: #FFF0A5;
-}
-.green {
-  background-color: #468966;
-}
-.brown {
-  background-color: #FFB03B;
-}
-.pink {
-  background-color: #B64926;
 }

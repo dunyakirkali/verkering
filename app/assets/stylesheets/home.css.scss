@@ -1,3 +1,97 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  padding: 3px;
+  color: white;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2pt;
+  word-spacing:5pt;
+  font-size:38px;
+  text-align:left;
+  font-family:helvetica, sans-serif;
+  line-height:2;
+}
+button {
+  font-family:helvetica, sans-serif;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2pt;
+  word-spacing:5pt;
+  font-size:38px;
+  border: 0px;
+  margin-top: auto;
+  text-transform:uppercase;
+  text-align: center;
+  width: auto;
+  height: 80px;
+  margin: 3px;
+}
+#header {
+  padding-left: 10px;
+  height: auto;
+  background-color: rgb(38, 38, 38);
+}
+#buttons {
+  padding: 3px;
+  text-align:center;
+  background-color: rgb(38, 38, 38);
+  width:auto;
+  height:auto;
+}
+#list {
+  background-color: rgb(38, 38, 38);
+}
+.button {
+  color: white;
+  background-color: #247fcc;
+}
+.curved {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 5px;
+}
+.item {
+  margin-top: auto;
+  vertical-align:middle;
+  text-transform:uppercase;
+  text-align: center;
+  min-width: 80px;
+  width: auto;
+  height: auto;
+  margin: 3px;
+  float: left;
+}
+.dark-red {
+  background-color: #F2508B;
+}
+.medium-dark-red {
+  background-color: #F288A4;
+}
+.medium-red {
+  background-color: #FEDCBA;
+}
+.medium-ligth-red {
+  background-color: #D7DDC3;
+}
+.light-red {
+  background-color: #93BDB9;
+}
+.red {
+  background-color: #8E2800;
+}
+.yellow {
+  background-color: #FFF0A5;
+}
+.green {
+  background-color: #468966;
+}
+.brown {
+  background-color: #FFB03B;
+}
+.pink {
+  background-color: #B64926;
+}

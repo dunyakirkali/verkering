@@ -37,4 +37,4 @@ end
 
 gem 'slim-rails'
 gem 'rails_12factor'
-gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4'
+gem 'compass-rails', github: 'milgner/compass-rails', branch: 'rails4'
